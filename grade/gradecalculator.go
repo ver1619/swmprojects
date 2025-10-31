@@ -38,15 +38,15 @@ func main() {
 	fmt.Printf("Total Marks: %d\n", totalMarks)
 	fmt.Printf("Percentage: %.2f%%\n", percentage)
 
-	if percentage <= 100 && percentage >= 90 {
+	if percentage <= 100 && percentage > 90 {
 		fmt.Println("Grade: A")
-	} else if percentage < 90 && percentage >= 80 {
+	} else if percentage <= 90 && percentage > 80 {
 		fmt.Println("Grade: B")
-	} else if percentage < 80 && percentage >= 70 {
+	} else if percentage <= 80 && percentage > 70 {
 		fmt.Println("Grade: C")
-	} else if percentage < 70 && percentage >= 60 {
+	} else if percentage <= 70 && percentage > 60 {
 		fmt.Println("Grade: D")
-	} else if percentage < 60 && percentage >= 50 {
+	} else if percentage <= 60 && percentage > 50 {
 		fmt.Println("Grade: E")
 	} else {
 		fmt.Println("Grade: F")
