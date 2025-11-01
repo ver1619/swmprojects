@@ -71,6 +71,7 @@ func main() {
 	fmt.Scanf("%d", &choice)
 
 	switch choice {
+
 	// Swap Function
 	case 1:
 		var x int
@@ -82,7 +83,8 @@ func main() {
 		x, y = Swap(x, y)
 		fmt.Printf("Before Swapping: %d, %d\n", y, x)
 		fmt.Printf("After Swapping: %d, %d\n", x, y)
-		// Even Odd Function
+
+	// Even Odd Function
 	case 2:
 		var num int
 		fmt.Print("Enter a number: ")
@@ -90,7 +92,7 @@ func main() {
 		result := evenodd(num)
 		fmt.Printf("The number %d is %s\n", num, result)
 
-		// Max of 3 Function
+	// Max of 3 Function
 	case 3:
 		var a, b, c int
 		fmt.Print("Enter first number: ")
@@ -102,14 +104,14 @@ func main() {
 		max := maxof3(a, b, c)
 		fmt.Printf("The maximum of %d, %d and %d is %d\n", a, b, c, max)
 
-		// Multiplication Table Function
+	// Multiplication Table Function
 	case 4:
 		var num int
 		fmt.Print("Enter a number to print its multiplication table: ")
 		fmt.Scanf("%d", &num)
 		table(num)
 
-		// Sum of N Natural Numbers Function
+	// Sum of N Natural Numbers Function
 	case 5:
 		var num int
 		fmt.Print("Enter +ve integer: ")
@@ -117,7 +119,7 @@ func main() {
 		result := sumofn(num)
 		fmt.Printf("The sum of the first %d natural numbers is: %d\n", num, result)
 
-		// Sum of Even and Odd Numbers Function
+	// Sum of Even and Odd Numbers Function
 	case 6:
 		var num int
 		fmt.Print("Enter a positive integer: ")
