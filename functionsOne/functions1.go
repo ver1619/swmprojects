@@ -2,10 +2,12 @@ package main
 
 import "fmt"
 
+// Swap function to swap two numbers
 func Swap(a int, b int) (int, int) {
 	return b, a
 }
 
+// evenodd function to check if a number is even or odd
 func evenodd(n int) string {
 	if n%2 == 0 {
 		return "Even"
@@ -14,6 +16,7 @@ func evenodd(n int) string {
 	}
 }
 
+// maxof3 function to find the maximum of three numbers
 func maxof3(a int, b int, c int) int {
 	if a >= b && a >= c {
 		return a
@@ -24,6 +27,7 @@ func maxof3(a int, b int, c int) int {
 	}
 }
 
+// table function to print multiplication table of a number
 func table(n int) {
 	for i := 1; i <= 10; i++ {
 		result := n * i
@@ -31,6 +35,7 @@ func table(n int) {
 	}
 }
 
+// sumofn function to calculate the sum of first n natural numbers
 func sumofn(n int) int {
 	sum := 0
 	for i := 1; i <= n; i++ {
@@ -39,6 +44,7 @@ func sumofn(n int) int {
 	return sum
 }
 
+// sumofevenodd function to calculate the sum of even and odd numbers up to n
 func sumofevenodd(n int) (int, int) {
 	evenSum := 0
 	oddSum := 0
@@ -65,6 +71,7 @@ func main() {
 	fmt.Scanf("%d", &choice)
 
 	switch choice {
+	// Swap Function
 	case 1:
 		var x int
 		var y int
@@ -75,12 +82,15 @@ func main() {
 		x, y = Swap(x, y)
 		fmt.Printf("Before Swapping: %d, %d\n", y, x)
 		fmt.Printf("After Swapping: %d, %d\n", x, y)
+		// Even Odd Function
 	case 2:
 		var num int
 		fmt.Print("Enter a number: ")
 		fmt.Scanf("%d", &num)
 		result := evenodd(num)
 		fmt.Printf("The number %d is %s\n", num, result)
+
+		// Max of 3 Function
 	case 3:
 		var a, b, c int
 		fmt.Print("Enter first number: ")
@@ -91,12 +101,15 @@ func main() {
 		fmt.Scanf("%d", &c)
 		max := maxof3(a, b, c)
 		fmt.Printf("The maximum of %d, %d and %d is %d\n", a, b, c, max)
+
+		// Multiplication Table Function
 	case 4:
 		var num int
 		fmt.Print("Enter a number to print its multiplication table: ")
 		fmt.Scanf("%d", &num)
 		table(num)
 
+		// Sum of N Natural Numbers Function
 	case 5:
 		var num int
 		fmt.Print("Enter +ve integer: ")
@@ -104,6 +117,7 @@ func main() {
 		result := sumofn(num)
 		fmt.Printf("The sum of the first %d natural numbers is: %d\n", num, result)
 
+		// Sum of Even and Odd Numbers Function
 	case 6:
 		var num int
 		fmt.Print("Enter a positive integer: ")
