@@ -14,13 +14,13 @@ func main() {
 		fmt.Scan(&num)
 		arr = append(arr, num)
 	}
-	fmt.Println(arr)
+	fmt.Println("Array elements:", arr)
 
 	sum := 0
 	for _, v := range arr {
 		sum += v
 	}
-	fmt.Println("Sum:", sum)
+	fmt.Println("Sum of elements:", sum)
 	average := float64(sum) / float64(len(arr))
-	fmt.Printf("Average: %.2f\n", average)
+	fmt.Printf("Average of elements: %.2f\n", average)
 }
