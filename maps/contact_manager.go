@@ -59,9 +59,7 @@ func search_contact(m map[string]int, name string) {
 }
 
 func main() {
-	a := map[string]int{
-		"Vinay": 234929173,
-	}
+	a := make(map[string]int)
 	fmt.Println("Welcome! To your Personal Phone Manager")
 	for {
 		fmt.Println("===Operations===")
