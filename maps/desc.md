@@ -2,11 +2,11 @@
 **Simple Contact Manager designed using maps**
 ---
 + Features
- - Add Contact
- - Delete Contact
- - Update Contacrt
- - Search Contact
- - List Contacts
+  - Add Contact
+  - Delete Contact
+  - Update Contacrt
+  - Search Contact
+  - List Contacts
 ---
 <img width="666" height="325" alt="image" src="https://github.com/user-attachments/assets/3a75e757-5e9d-4343-a6ce-cfb47531385a" />
 ---
